@@ -2,6 +2,11 @@
   "name": "advisory-board",
   "version": "1.0.0",
   "description": "6-persona AI advisory board that stress-tests your decisions before you commit",
-  "author": { "name": "Juan Minoprio" },
-  "license": "MIT"
+  "author": {
+    "name": "Juan Minoprio",
+    "url": "https://juanminoprio.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/JuanMinoprio/advisory-board",
+  "repository": "https://github.com/JuanMinoprio/advisory-board"
 }

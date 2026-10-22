@@ -27,11 +27,17 @@ Two ways. Pick whichever you trust more.
 Inside Claude Code (type these in the Claude Code chat, not a separate terminal):
 
 ```
-/plugin marketplace add JuanMinoprio/advisory-board
-/plugin install advisory-board@JuanMinoprio
+/plugin install advisory-board --marketplace JuanMinoprio/advisory-board
 ```
 
-To update later: `/plugin update advisory-board@JuanMinoprio`
+On Claude Code older than 2.1.275, use two steps instead:
+
+```
+/plugin marketplace add JuanMinoprio/advisory-board
+/plugin install advisory-board@advisory-board
+```
+
+To update later: `/plugin update advisory-board@advisory-board`
 
 ### Option 2 — Manual install (inspect the source first)
 
@@ -70,7 +76,7 @@ This walks you through 5 questions and calibrates the board to your specific com
 **To update:**
 
 ```
-/plugin update advisory-board@JuanMinoprio
+/plugin update advisory-board@advisory-board
 ```
 
 ---
@@ -131,6 +137,20 @@ The critical structural rule: `skills/` lives at the **plugin root**, not inside
 Built this because I was making too many big decisions in an echo chamber. The Devil's Advocate alone has saved me from 3 expensive mistakes.
 
 If you try it, I'd love to know what you think. [DM me on LinkedIn](https://www.linkedin.com/in/juanminoprio/) or open an issue.
+
+---
+
+## Privacy and secrets
+
+Nothing here needs an API key, token, or account. The skill runs inside your own Claude Code session, and your personal config stays on your machine at `~/.claude/data/advisory-board/`. If you fork it and add an integration that does need a key, keep it in a local `.env` file: `.gitignore` already blocks `.env` files from being committed.
+
+---
+
+## Want this built for your team?
+
+I'm Juan Minoprio. I build AI tools and workflows for marketing teams: systems like this one, scoped to your stack, your data, and your compliance rules.
+
+**[Start a conversation](https://juanminoprio.com/?utm_source=github&utm_medium=readme&utm_campaign=advisory-board#contact)** or email hello@juanminoprio.com.
 
 ---
 
