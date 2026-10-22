@@ -11,8 +11,14 @@ Advisory Board takes your decision, question, or proposal and runs it through 6 
 Two commands in Claude Code. No Terminal required.
 
 ```
+/plugin install advisory-board --marketplace JuanMinoprio/advisory-board
+```
+
+On Claude Code older than 2.1.275, use two steps instead:
+
+```
 /plugin marketplace add JuanMinoprio/advisory-board
-/plugin install advisory-board@JuanMinoprio
+/plugin install advisory-board@advisory-board
 ```
 
 Don't have Claude Code yet? It's a free CLI that runs Claude directly in your terminal. [Install it here](https://docs.anthropic.com/claude/claude-code) — takes 2 minutes.
@@ -38,7 +44,7 @@ This walks you through 5 questions and calibrates the board to your specific com
 **To update:**
 
 ```
-/plugin update advisory-board@JuanMinoprio
+/plugin update advisory-board@advisory-board
 ```
 
 ---

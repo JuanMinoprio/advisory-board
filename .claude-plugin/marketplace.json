@@ -1,8 +1,11 @@
 {
-  "name": "JuanMinoprio",
-  "owner": { "name": "Juan Minoprio" },
+  "name": "advisory-board",
+  "owner": {
+    "name": "Juan Minoprio",
+    "url": "https://juanminoprio.com"
+  },
   "metadata": {
-    "description": "Juan Minoprio's Claude Code plugins — AI advisory board and marketing tools"
+    "description": "Advisory Board: a 6-persona AI advisory board that stress-tests your decisions."
   },
   "plugins": [
     {
